@@ -19,12 +19,14 @@ let dark = ref(true);
 <template>
 	<div :class="[dark ? 'dark' : '']">
 		<div
-			class="w-full h-full p-20 bg-zinc-100 dark:bg-[#535353] transition duration-300 ease-out"
+			class="w-full h-full min-[387px]:py-20 bg-zinc-100 dark:bg-[#535353] transition duration-300 ease-out"
 		>
-			<div class="w-[387px] mx-auto mb-6">
+			<div
+				class="fixed bottom-3 z-10 min-[387px]:relative w-[387px] mx-auto min-[387px]:mb-6 px-4"
+			>
 				<button
 					@click="dark = !dark"
-					class="w-10 h-10 rounded-full bg-[#f6f6f6] dark:bg-[#282828] flex items-center justify-center shadow-md"
+					class="w-10 h-10 rounded-full bg-[#f6f6f6] dark:bg-[#282828] flex items-center justify-center shadow-md ring-2 ring-white/20"
 				>
 					<IconMoonFilled class="text-white" v-if="dark" />
 					<IconSunFilled class="text-black" v-if="!dark" />
@@ -32,10 +34,10 @@ let dark = ref(true);
 			</div>
 
 			<div
-				class="p-1.5 bg-white dark:bg-[#222222] w-[387px] h-[824px] mx-auto rounded-[40px] shadow-lg"
+				class="min-[387px]:p-1.5 min-[387px]:bg-white dark:bg-[#222222] min-[387px]:w-[387px] h-[824px] mx-auto min-[387px]:rounded-[40px] shadow-lg"
 			>
 				<div
-					class="relative w-[375px] h-[812px] bg-[#f6f6f6] dark:bg-[#282828] dark:text-white mx-auto rounded-[34px] py-10 overflow-hidden"
+					class="relative w-[375px] h-[812px] bg-[#f6f6f6] dark:bg-[#282828] dark:text-white mx-auto min-[387px]:rounded-[34px] py-10 overflow-hidden"
 				>
 					<!-- <div
 						class="absolute w-[1080px] opacity-0 top-[-83px] left-[-118px]"
