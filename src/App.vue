@@ -37,11 +37,11 @@ let dark = ref(true);
 				<div
 					class="relative w-[375px] h-[812px] bg-[#f6f6f6] dark:bg-[#282828] dark:text-white mx-auto rounded-[34px] py-10 overflow-hidden"
 				>
-					<div
+					<!-- <div
 						class="absolute w-[1080px] opacity-0 top-[-83px] left-[-118px]"
 					>
 						<img src="design_light_mode.jpg" alt="" />
-					</div>
+					</div> -->
 					<div
 						class="absolute left-0 flex items-center justify-between w-full px-8 top-8"
 					>
